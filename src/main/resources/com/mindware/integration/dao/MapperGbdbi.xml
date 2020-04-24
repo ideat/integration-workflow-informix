@@ -1,0 +1,15 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mindware.integration.dao.MapperGbdbi">
+
+
+    <select id="getById" resultType="com.mindware.integration.entity.Gbdbi" parameterType="map">
+        <![CDATA[
+        select *
+        from gbdbi
+        where gbdbicage = #{gbdbicage}
+        ]]>
+    </select>
+
+
+</mapper>

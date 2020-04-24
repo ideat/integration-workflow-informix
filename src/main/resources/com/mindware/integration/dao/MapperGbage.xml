@@ -1,0 +1,29 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mindware.integration.dao.MapperGbage">
+
+
+    <select id="getById" resultType="com.mindware.integration.entity.Gbage" parameterType="map">
+        <![CDATA[
+        select *
+        from gbage
+        where gbagecage = #{gbagecage}
+        ]]>
+    </select>
+
+    <select id="getByNombre" resultType="com.mindware.integration.entity.Gbage" parameterType="map">
+        <![CDATA[
+        select *
+        from gbage
+        where gbagenomb like #{gbagenomb}
+        ]]>
+    </select>
+
+    <select id="getByCarnet" resultType="com.mindware.integration.entity.Gbage" parameterType="map">
+        <![CDATA[
+        select *
+        from gbage
+        where gbagendid like #{gbagendid}
+        ]]>
+    </select>
+</mapper>
